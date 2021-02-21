@@ -90,8 +90,20 @@ for i in range(10):
 """
 
 #  вывести табличку умножения с помощью цикла while
-
+"""
 for i in range(1, 10):
     for j in range(1, 10):
         print(i * j, end='\t')
     print()
+
+
+i = 0
+j = 0
+while i < 9:
+    i += 1
+    while j < 9:
+        j += 1
+        print(i * j, end='\t')
+    j = 0
+    print()
+"""

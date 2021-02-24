@@ -1,12 +1,11 @@
 # 1)написати прогу яка вибирає зі введеної строки цифри і виводить їх через кому,
-
 def checkstr(string):
     for i in range(len(string)):
         if string[i].isdigit():
             print(string[i], end=',')
 
-checkstr('as 23 fdfdg544 34')
 
+checkstr('as 23 fdfdg544 34')
 
 # 2)написати прогу яка вибирає зі введеної строки числа і виводить їх
 # так як вони написані
@@ -88,7 +87,6 @@ lfunc(1, 2, 3, 4, 6)
 def lfunc(*args):
     l = list(args)
     print(min(l))
-
 
 lfunc(1, 2, 3, 4, 6)
 '''

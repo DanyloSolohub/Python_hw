@@ -1,4 +1,5 @@
 # 1)написати прогу яка вибирає зі введеної строки цифри і виводить їх через кому,
+"""
 def checkstr(string):
     for i in range(len(string)):
         if string[i].isdigit():
@@ -6,10 +7,11 @@ def checkstr(string):
 
 
 checkstr('as 23 fdfdg544 34')
+"""
 
 # 2)написати прогу яка вибирає зі введеної строки числа і виводить їх
 # так як вони написані
-'''
+"""
 def checkstr(string):
     for i in range(len(string)):
         if string[i].isdigit():
@@ -19,7 +21,7 @@ def checkstr(string):
 
 
 checkstr('as 23 fd6fdg544 34')
-'''
+"""
 # записать каждый символ в лист поменяв его на верхний регистр
 '''
 greeting = 'Hello, world'

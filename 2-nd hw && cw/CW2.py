@@ -37,9 +37,10 @@ print(copy)
 
 list1 = [1, 2, 3, 4, 5]
 list2 = [-1, 7, 10, -5, -2]
-res = []
-for x in list1:
-    for y in list2:
-        if x + y == 0:
-            res.insert(0, (x, y))
+res = [(x, y) for x in list1 for y in list2 if x + y == 0]
 print(res)
+# for x in list1:
+#     for y in list2:
+#         if x + y == 0:
+#             res.insert(len(res), (x, y))
+# print(res)

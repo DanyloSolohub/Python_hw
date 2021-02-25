@@ -1,9 +1,9 @@
 # 1)написати прогу яка вибирає зі введеної строки цифри і виводить їх через кому,
 """
 def checkstr(string):
-    for i in range(len(string)):
-        if string[i].isdigit():
-            print(string[i], end=',')
+    string = [i for i in string if i.isdigit()]
+    my_string = ','.join(string)
+    print(my_string)
 
 
 checkstr('as 23 fdfdg544 34')
@@ -12,15 +12,25 @@ checkstr('as 23 fdfdg544 34')
 # 2)написати прогу яка вибирає зі введеної строки числа і виводить їх
 # так як вони написані
 """
-def checkstr(string):
-    for i in range(len(string)):
-        if string[i].isdigit():
-            print(string[i], end='')
-        elif not string[i].isdigit() and string[i - 1].isdigit():
-            print('', end=',')
+def func(st):
+    num_list = []
+    num = ''
+    for i in st:
+        if i.isdigit():
+            # print(i, end=',')
+            num += i
+            # print(num)
+        else:
+            if num != '':
+                num_list.append(num)
+                num = ''
+    if num != '':
+        num_list.append(num)
+    final_num = ','.join(num_list)
+    # print(num_list)
+    print(final_num)
 
-
-checkstr('as 23 fd6fdg544 34')
+func('as 23 fd6fdg544 34')
 """
 # записать каждый символ в лист поменяв его на верхний регистр
 '''

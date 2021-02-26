@@ -113,13 +113,40 @@ print(copy)
 # записать в лист тюплы (x,y) если x+y == 0
 # пример:
 # [(1, -1), (2, -2), (5, -5)]
-
+"""
 list1 = [1, 2, 3, 4, 5]
 list2 = [-1, 7, 10, -5, -2]
 res = [(x, y) for x in list1 for y in list2 if x + y == 0]
 print(res)
-# for x in list1:
-#     for y in list2:
-#         if x + y == 0:
-#             res.insert(len(res), (x, y))
-# print(res)
+"""
+#
+"""
+for x in list1:
+    for y in list2:
+        if x + y == 0:
+            res.insert(len(res), (x, y))
+print(res)
+"""
+# 1) Точная степень двойки.
+# Дано натуральное число N.
+# Выведите слово YES , если число N является точной степенью двойки,
+# или слово NO в противном случае.
+# Операцией возведения в степень пользоваться нельзя!
+"""
+inputData = int(input())
+
+
+def check_pow(number):
+    if number == 1:
+        return print('No')
+
+    while number > 1:
+        number = number / 2
+    if number < 1:
+        return print('NO')
+    else:
+        return print('Yes')
+
+
+check_pow(inputData)
+"""

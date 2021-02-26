@@ -141,7 +141,7 @@ def check_pow(number):
         return print('No')
 
     while number > 1:
-        number = number / 2
+        number /= 2
     if number < 1:
         return print('NO')
     else:

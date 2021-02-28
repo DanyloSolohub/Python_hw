@@ -150,3 +150,4 @@ def check_pow(number):
 
 check_pow(inputData)
 """
+

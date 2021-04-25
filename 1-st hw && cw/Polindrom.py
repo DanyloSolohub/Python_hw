@@ -9,10 +9,9 @@ start_time = time.time()
 
 def find_poli():
     # ------check if num is a palindrome--------
-    def is_polka(numm):
-        if all(numm[j] == numm[(len(numm) - 1) - j] for j in range(len(numm))):
-            return True
-        return False
+    def is_polka(item) -> bool:
+        string = str(item)
+        return all(string[i] == string[(-i - 1)] for i in range(len(string)))
 
     # ----finding prime numbers--------
     lst = []
@@ -41,4 +40,4 @@ def find_poli():
 
 
 find_poli()
-print("--- %s seconds ---" % (time.time() - start_time))
+print(f"--- {time.time() - start_time} seconds ---")
